@@ -1,0 +1,339 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Student Grade Analyzer — Eyasin Sheikh</title><style>
+:root{--bg:#070711;--panel:#0d1020;--panel2:#11152a;--text:#f7f8ff;--muted:#a6aec2;--cyan:#2de2e6;--pink:#ff4ecd;--purple:#8d6bff;--line:#ffffff14;--shadow:0 30px 90px #0008}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Arial;background:var(--bg);overflow-x:hidden}body:before{content:"";position:fixed;inset:0;z-index:-5;background:radial-gradient(circle at 10% 5%,#2de2e620,transparent 28%),radial-gradient(circle at 90% 15%,#ff4ecd18,transparent 30%),radial-gradient(circle at 50% 95%,#8d6bff17,transparent 30%)}#particles{position:fixed;inset:0;width:100%;height:100%;z-index:-4;pointer-events:none;opacity:.8}.wrap{width:min(1180px,92%);margin:auto}.nav{position:sticky;top:0;z-index:30;background:#070711b8;backdrop-filter:blur(20px);border-bottom:1px solid var(--line);padding:16px 0}.navin{display:flex;align-items:center;justify-content:space-between}.brand{font-weight:950;letter-spacing:1px}.brand span{color:var(--cyan)}.navlinks a{color:#dbe1ef;text-decoration:none;font-size:13px;margin-left:18px;transition:.35s}.navlinks a:hover{color:var(--cyan)}.hero{min-height:78vh;display:grid;grid-template-columns:1.15fr .85fr;gap:70px;align-items:center;padding:70px 0}.eyebrow{color:var(--cyan);font-size:12px;letter-spacing:4px;font-weight:900}.hero h1{font-size:clamp(54px,8vw,102px);line-height:.9;margin:18px 0;background:linear-gradient(90deg,#fff,var(--cyan),var(--pink),var(--purple),#fff);background-size:400%;-webkit-background-clip:text;color:transparent;animation:gradient 9s linear infinite,heroIn 1s both}.hero p{color:var(--muted);font-size:17px;line-height:1.9;max-width:700px;animation:fadeUp 1s .25s both}.hero-actions a,.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 17px;border:1px solid #ffffff18;border-radius:12px;background:linear-gradient(100deg,var(--cyan),var(--purple));color:#05070e;font-weight:900;text-decoration:none;cursor:pointer;box-shadow:0 15px 40px #2de2e61a;transition:transform .45s,box-shadow .45s,filter .45s}.hero-actions a:hover,.btn:hover{transform:translateY(-5px) scale(1.02);box-shadow:0 22px 55px #ff4ecd24;filter:brightness(1.08)}.portrait{width:min(360px,78vw);aspect-ratio:1;border-radius:50%;object-fit:cover;border:2px solid #2de2e65c;box-shadow:0 0 0 15px #2de2e609,0 0 100px #ff4ecd1a;animation:float 6s ease-in-out infinite}.category{padding:70px 0}.cathead{display:flex;justify-content:space-between;align-items:end;border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:20px}.cathead h2{margin:0;font-size:30px}.cathead small{color:#778096}.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.project{position:relative;overflow:hidden;padding:24px;border:1px solid var(--line);border-radius:22px;background:linear-gradient(145deg,#ffffff08,#ffffff03);box-shadow:0 15px 60px #0004;transition:transform .55s cubic-bezier(.16,1,.3,1),border-color .45s,box-shadow .45s}.project:before{content:"";position:absolute;inset:-50%;background:conic-gradient(from 180deg,transparent,#2de2e60f,transparent,#ff4ecd0d,transparent);animation:spin 8s linear infinite;pointer-events:none}.project>*{position:relative}.project:hover{transform:translateY(-10px);border-color:#2de2e655;box-shadow:0 28px 80px #0008,0 0 35px #2de2e60d}.icon{font-size:38px;display:inline-block;animation:iconFloat 4s ease-in-out infinite}.project h3{margin:12px 0 8px}.project p{color:var(--muted);line-height:1.7;min-height:52px}.project a{display:inline-block;margin-top:8px;color:var(--cyan);text-decoration:none;font-weight:900}.contact{text-align:center;padding:90px 0;border-top:1px solid var(--line)}.icons{display:flex;justify-content:center;gap:12px;margin-top:25px}.icons a{width:54px;height:54px;display:grid;place-items:center;border:1px solid #ffffff18;border-radius:50%;color:#fff;background:#ffffff06;transition:.5s}.icons a:hover{transform:translateY(-6px) scale(1.08) rotate(3deg);border-color:#2de2e666;box-shadow:0 18px 45px #2de2e616}.icons svg{width:22px;height:22px;fill:currentColor}.demoHero{padding:65px 0 35px;display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}.demoHero h1{font-size:clamp(44px,7vw,78px);line-height:.95;margin:14px 0;background:linear-gradient(90deg,#fff,var(--cyan),var(--pink),#fff);background-size:350%;-webkit-background-clip:text;color:transparent;animation:gradient 8s linear infinite}.orb{height:300px;border-radius:30px;border:1px solid #2de2e633;background:linear-gradient(145deg,#2de2e60d,#ff4ecd0d);display:grid;place-items:center;box-shadow:var(--shadow);animation:float 6s ease-in-out infinite}.orb b{font-size:95px;text-shadow:0 0 60px #2de2e688;animation:pulse 3s ease-in-out infinite}.app{padding:28px;border:1px solid var(--line);border-radius:25px;background:#ffffff06;box-shadow:var(--shadow)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.card{padding:19px;border:1px solid var(--line);border-radius:17px;background:#ffffff05;transition:.45s}.card:hover{transform:translateY(-5px);border-color:#2de2e63b}.muted{color:var(--muted);line-height:1.75}.kpi{font-size:32px;font-weight:950}.output{margin-top:15px;padding:15px;border:1px solid #2de2e624;border-radius:12px;background:#050811;color:#c9fcff;white-space:pre-wrap}.table{width:100%;border-collapse:collapse}.table th,.table td{padding:11px;text-align:left;border-bottom:1px solid var(--line)}input,select,textarea{background:#070a12;color:#fff;border:1px solid #2de2e633;border-radius:10px;padding:11px;outline:none;width:100%}input:focus,select:focus,textarea:focus{border-color:var(--cyan);box-shadow:0 0 0 4px #2de2e60b}.bar{height:10px;background:#171b2a;border-radius:99px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--cyan),var(--pink),var(--purple));transition:1s cubic-bezier(.16,1,.3,1)}.board{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.col{min-height:240px;padding:15px;border:1px solid var(--line);border-radius:15px;background:#ffffff04}.task{padding:13px;margin:9px 0;border-radius:11px;background:#0a0e18;border:1px solid #ffffff12;cursor:grab}.terminal{min-height:330px;background:#020407;border:1px solid #2de2e625;border-radius:17px;padding:20px;color:#9ffbff;font-family:Consolas,monospace;overflow:auto}.terminal input{border:0;background:transparent;font:inherit}.chart{height:250px;display:flex;align-items:end;gap:9px;padding:15px}.chart span{flex:1;min-height:4px;border-radius:7px 7px 0 0;background:linear-gradient(#2de2e6,#8d6bff);transition:height .8s cubic-bezier(.16,1,.3,1)}footer{text-align:center;color:#727c91;padding:30px;border-top:1px solid var(--line)}.back{color:#dce3f2;text-decoration:none;border:1px solid #ffffff17;padding:9px 14px;border-radius:11px;transition:.4s}.back:hover{transform:translateY(-3px);border-color:#2de2e655}@keyframes gradient{to{background-position:400% center}}@keyframes heroIn{from{opacity:0;transform:translateY(25px);filter:blur(8px)}to{opacity:1;transform:none;filter:none}}@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px) rotate(.7deg)}}@keyframes pulse{50%{transform:scale(1.08)}}@keyframes iconFloat{50%{transform:translateY(-5px) rotate(2deg)}}@keyframes spin{to{transform:rotate(360deg)}}@media(max-width:850px){.hero,.demoHero{grid-template-columns:1fr}.projects,.grid,.board{grid-template-columns:1fr}.navlinks{display:none}}
+</style><style id="SMOOTH-MOTION-V2">html{scroll-behavior:smooth}body{animation:pageEnter .75s cubic-bezier(.16,1,.3,1)}@keyframes pageEnter{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}.app{animation:appIn .8s .12s both}@keyframes appIn{from{opacity:0;transform:translateY(20px) scale(.985)}to{opacity:1;transform:none}}@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}</style>
+<style id="eyasin-motion-theme">
+:root{
+ --bg:#050406;--panel:#0d090c;--panel2:#130b10;
+ --accent:#ff174f;--accent2:#ff5578;--violet:#9b5cff;
+ --text:#f7f9ff;--muted:#9c9399;--line:rgba(255,255,255,.08);
+ --glow:rgba(255,23,79,.28)
+}
+html{scroll-behavior:smooth}
+body{background:
+ radial-gradient(circle at 76% 18%,rgba(255,23,79,.10),transparent 28%),
+ radial-gradient(circle at 16% 78%,rgba(155,92,255,.06),transparent 26%),
+ var(--bg)!important; color:var(--text)!important}
+body.eyasin-ready{animation:eyPage .8s cubic-bezier(.16,1,.3,1) both}
+@keyframes eyPage{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+a,button,input,select,textarea{transition:transform .45s cubic-bezier(.16,1,.3,1),box-shadow .45s,border-color .45s,background .45s,filter .45s}
+a:hover,button:hover{filter:brightness(1.08)}
+#fx-particles{position:fixed;inset:0;width:100%;height:100%;z-index:-5;pointer-events:none;opacity:.5}
+#fx-cursor{position:fixed;width:290px;height:290px;border-radius:50%;pointer-events:none;z-index:9998;opacity:0;transform:translate(-50%,-50%);
+ background:radial-gradient(circle,rgba(255,23,79,.12),rgba(255,23,79,.035) 30%,transparent 68%);mix-blend-mode:screen}
+#fx-progress{position:fixed;top:0;left:0;width:0;height:3px;z-index:10001;background:linear-gradient(90deg,#ff174f,#ff7d9b,#9b5cff);box-shadow:0 0 18px rgba(255,23,79,.65)}
+.ey-reveal{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1)}
+.ey-reveal.ey-visible{opacity:1;transform:none}
+.ey-float{animation:eyFloat 6s ease-in-out infinite}
+@keyframes eyFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+.ey-glow{animation:eyGlow 3.8s ease-in-out infinite}
+@keyframes eyGlow{0%,100%{box-shadow:0 0 0 rgba(255,23,79,0)}50%{box-shadow:0 0 55px rgba(255,23,79,.18)}}
+.ey-shine{position:relative;overflow:hidden}
+.ey-shine:after{content:"";position:absolute;inset:-20%;pointer-events:none;background:linear-gradient(115deg,transparent 35%,rgba(255,255,255,.10),transparent 55%);transform:translateX(-120%) rotate(8deg)}
+.ey-shine:hover:after{animation:eyShine 1s ease forwards}
+@keyframes eyShine{to{transform:translateX(120%) rotate(8deg)}}
+.ey-gradient-text{background:linear-gradient(90deg,#fff,#ff5578,#ff174f,#9b5cff,#fff);background-size:350%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:eyGradient 9s linear infinite}
+@keyframes eyGradient{to{background-position:350% center}}
+@media(max-width:700px){#fx-cursor{display:none}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+</style>
+<style id="eyasin-midnight-neon">
+/* === EYASIN MIDNIGHT NEON / SMOOTH MOTION === */
+:root{--bg:#0f0f13;--panel:#15151c;--panel2:#191923;--line:#ffffff14;--text:#f5f5f7;--muted:#a6a6b3;--cyan:#22d3ee;--purple:#8b5cf6;--crimson:#dc2626}
+html{scroll-behavior:smooth}
+body{background:var(--bg)!important;color:var(--text)!important;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:-20%;z-index:-6;pointer-events:none;background:radial-gradient(circle at 15% 15%,rgba(34,211,238,.10),transparent 25%),radial-gradient(circle at 85% 25%,rgba(139,92,246,.12),transparent 28%),radial-gradient(circle at 50% 90%,rgba(220,38,38,.07),transparent 30%);filter:blur(20px);animation:ambient 18s ease-in-out infinite alternate}
+@keyframes ambient{0%{transform:translate3d(-1%,0,0) scale(1)}50%{transform:translate3d(2%,1%,0) scale(1.04)}100%{transform:translate3d(-1%,3%,0) scale(1.07)}}
+#eyasin-particles{position:fixed;inset:0;width:100%;height:100%;z-index:-4;pointer-events:none}
+*{transition-timing-function:cubic-bezier(.16,1,.3,1)}
+a,button,.btn,.project,.card,.work-card{transition:transform .55s cubic-bezier(.16,1,.3,1),box-shadow .55s,border-color .45s,filter .45s,background .45s}
+.hero h1{background:linear-gradient(100deg,#fff,var(--cyan),var(--purple),var(--crimson),#fff)!important;background-size:350%!important;-webkit-background-clip:text!important;color:transparent!important;animation:gradient 9s linear infinite!important}
+@keyframes gradient{to{background-position:350% center}}
+.btn,.hero-actions a,.project a{background:linear-gradient(110deg,var(--cyan),var(--purple),var(--crimson))!important;background-size:220% 220%!important;animation:buttonGradient 8s ease infinite}
+@keyframes buttonGradient{0%,100%{background-position:0 50%}50%{background-position:100% 50%}}
+.project:hover,.card:hover,.work-card:hover{transform:translateY(-7px);border-color:rgba(34,211,238,.38)!important;box-shadow:0 24px 70px rgba(34,211,238,.08)!important}
+.photo,.orb,.visual{animation:float 7s ease-in-out infinite!important}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+#eyasin-progress{position:fixed;left:0;top:0;height:3px;width:0;z-index:9999;background:linear-gradient(90deg,var(--cyan),var(--purple),var(--crimson));box-shadow:0 0 16px rgba(34,211,238,.5)}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+</style>
+<style id="eyasin-responsive-all-devices">
+/* =========================================================
+   EYASIN RESPONSIVE SYSTEM — PHONE / TABLET / LAPTOP / DESKTOP
+   ========================================================= */
+html{width:100%;max-width:100%;overflow-x:hidden}
+body{width:100%;max-width:100%;overflow-x:hidden;-webkit-text-size-adjust:100%}
+img,svg,video,canvas,iframe{max-width:100%;height:auto}
+iframe{border:0}
+pre,code{max-width:100%;overflow-x:auto}
+pre{white-space:pre;word-break:normal}
+table{width:100%;max-width:100%;border-collapse:collapse}
+input,select,textarea,button{max-width:100%;font:inherit}
+input,select,textarea{width:100%}
+button{touch-action:manipulation}
+.wrap,.container{width:min(1120px,92vw);max-width:100%;margin-left:auto;margin-right:auto}
+.navin,.nav-inner{width:min(1120px,92vw);max-width:100%;margin-left:auto;margin-right:auto}
+.hero,.hero-grid{min-width:0}
+.card,.demo,.visual,.panel,.section,.grid,.hero-grid>*, .hero>*{min-width:0}
+
+/* Large desktop */
+@media (min-width:1200px){
+  .wrap,.container,.navin,.nav-inner{width:min(1180px,90vw)}
+}
+
+/* Laptop / small desktop */
+@media (max-width:1100px){
+  .hero-grid{gap:42px}
+  .hero{gap:42px}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+
+/* Tablet */
+@media (max-width:900px){
+  .nav-inner,.navin{height:auto;min-height:64px;gap:14px}
+  .nav-links{gap:14px;flex-wrap:wrap;justify-content:flex-end}
+  .hero-grid,.hero{grid-template-columns:1fr!important}
+  .hero{padding:60px 0 45px;min-height:auto}
+  .hero-grid{gap:35px}
+  .visual{max-width:100%;margin:auto}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .demo{padding:24px}
+  h1,.hero h1{font-size:clamp(40px,8vw,72px);letter-spacing:-2.5px}
+}
+
+/* Phone */
+@media (max-width:600px){
+  .wrap,.container,.navin,.nav-inner{width:calc(100% - 28px)}
+  .nav-inner,.navin{padding:11px 0;flex-wrap:wrap}
+  .logo,.brand{font-size:16px}
+  .nav-links{width:100%;justify-content:flex-start;gap:8px 12px}
+  .nav-links a{font-size:11px}
+  .nav-btn{padding:8px 12px}
+  .hero{padding:45px 0 32px}
+  .hero-grid{gap:28px}
+  h1,.hero h1{font-size:clamp(34px,12vw,56px);line-height:.98;letter-spacing:-1.8px}
+  .hero h2{font-size:16px}
+  .hero p,.muted{font-size:13px;line-height:1.7}
+  .actions{flex-direction:column;align-items:stretch}
+  .actions a,.actions button,.btn{width:100%;text-align:center}
+  .grid{grid-template-columns:1fr!important;gap:12px}
+  .card{padding:17px}
+  .demo{padding:17px;border-radius:18px}
+  .section{padding:15px 0 50px}
+  .visual{height:min(72vw,290px);border-radius:22px}
+  .symbol{font-size:clamp(70px,22vw,105px)}
+  .tags span{font-size:10px;padding:6px 9px}
+  footer{padding:25px 14px}
+  #eyasin-cursor{display:none!important}
+}
+
+/* Small phones */
+@media (max-width:400px){
+  .wrap,.container,.navin,.nav-inner{width:calc(100% - 20px)}
+  .nav-links{gap:7px 9px}
+  h1,.hero h1{font-size:clamp(31px,12.5vw,48px)}
+  .hero{padding-top:35px}
+  .demo{padding:13px}
+  .card{padding:14px}
+}
+
+/* Touch devices: remove hover-only movement that can feel jumpy */
+@media (hover:none){
+  .card:hover,.btn:hover,.back:hover,.nav-links a:hover{transform:none}
+}
+
+/* Respect reduced-motion accessibility preference */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    animation-duration:.01ms!important;
+    animation-iteration-count:1!important;
+    scroll-behavior:auto!important;
+    transition-duration:.01ms!important;
+  }
+}
+</style>
+<style id="eyasin-premium-gradient-glow">
+/* =========================================================
+   PREMIUM GRADIENT GLOW CARD HOVER
+   ========================================================= */
+.card{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.10);
+  transition:
+    transform .45s cubic-bezier(.2,.8,.2,1),
+    border-color .45s ease,
+    box-shadow .45s ease,
+    background .45s ease;
+}
+
+/* soft animated glow behind the card */
+.card::before{
+  content:"";
+  position:absolute;
+  inset:-2px;
+  z-index:-2;
+  border-radius:inherit;
+  background:linear-gradient(
+    115deg,
+    #ff174f 0%,
+    #ff006e 28%,
+    #8b5cf6 58%,
+    #22d3ee 100%
+  );
+  background-size:220% 220%;
+  opacity:0;
+  filter:blur(18px);
+  transform:scale(.94);
+  transition:
+    opacity .5s ease,
+    transform .5s cubic-bezier(.2,.8,.2,1);
+  animation:eyasinGradientMove 4s ease infinite;
+}
+
+/* glowing border layer */
+.card::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  border-radius:inherit;
+  padding:1px;
+  background:linear-gradient(
+    120deg,
+    rgba(255,23,79,.95),
+    rgba(255,0,110,.75),
+    rgba(139,92,246,.85),
+    rgba(34,211,238,.75)
+  );
+  background-size:250% 250%;
+  opacity:0;
+  transition:opacity .45s ease;
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor;
+  mask-composite:exclude;
+  animation:eyasinGradientMove 4s ease infinite;
+}
+
+/* hover state */
+.card:hover{
+  transform:translateY(-9px) scale(1.015);
+  border-color:rgba(255,23,79,.45);
+  background:
+    radial-gradient(
+      circle at 12% 15%,
+      rgba(255,23,79,.18),
+      transparent 42%
+    ),
+    radial-gradient(
+      circle at 90% 90%,
+      rgba(139,92,246,.16),
+      transparent 48%
+    ),
+    linear-gradient(
+      135deg,
+      rgba(255,23,79,.08),
+      rgba(139,92,246,.07),
+      rgba(34,211,238,.06)
+    );
+  box-shadow:
+    0 18px 45px rgba(0,0,0,.38),
+    0 0 24px rgba(255,23,79,.20),
+    0 0 55px rgba(139,92,246,.13);
+}
+
+.card:hover::before{
+  opacity:.9;
+  transform:scale(1.02);
+}
+
+.card:hover::after{
+  opacity:1;
+}
+
+/* subtle shine passing across the card */
+.card{
+  --shine-x:-120%;
+}
+.card:hover{
+  --shine-x:120%;
+}
+.card > *{
+  position:relative;
+  z-index:1;
+}
+.card:hover > *{
+  filter:drop-shadow(0 0 3px rgba(255,255,255,.03));
+}
+
+@keyframes eyasinGradientMove{
+  0%,100%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+}
+
+/* Disable hover enlargement on touch screens */
+@media (hover:none){
+  .card:hover{
+    transform:none;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion:reduce){
+  .card,
+  .card::before,
+  .card::after{
+    animation:none!important;
+    transition:none!important;
+  }
+}
+</style>
+</head><body><canvas id="particles"></canvas><header class="nav"><div class="wrap navin"><div class="brand">EYASIN <span>SHEIKH</span></div><a class="back" href="index.html#work">← Back to Portfolio</a></div></header><section class="demoHero wrap"><div><div class="eyebrow">PYTHON · COMPLEX DEMO</div><h1>Student Grade Analyzer</h1><p class="muted">A fully interactive portfolio demo built for the Eyasin Sheikh showcase.</p></div><div class="orb"><b>🎓</b></div></section><main class="wrap"><div class="app"><h2>Grade Analyzer</h2><div class="grid"><input id="name" placeholder="Student"><input id="mark" type="number" min="0" max="100" placeholder="Mark"><button class="btn" onclick="add()">Add Mark</button></div><div class="chart" id="chart"></div><div class="output" id="out">Average: —</div></div><script>let D=[];function add(){let n=name.value,m=+mark.value;if(!n||m<0||m>100)return;D.push({n,m});draw();name.value=mark.value=''}function draw(){chart.innerHTML=D.map(x=>`<span title="${x.n}: ${x.m}" style="height:${x.m}%"></span>`).join('');let a=D.reduce((s,x)=>s+x.m,0)/(D.length||1);out.textContent=`Students: ${D.length}\nAverage: ${a.toFixed(2)}\nHighest: ${D.length?Math.max(...D.map(x=>x.m)):0}`}</script></main><footer>Eyasin Sheikh · Student Grade Analyzer</footer><script>
+(()=>{const c=document.getElementById('particles');if(!c)return;const x=c.getContext('2d');let W,H,P=[];function size(){W=innerWidth;H=innerHeight;const d=Math.min(devicePixelRatio||1,2);c.width=W*d;c.height=H*d;x.setTransform(d,0,0,d,0,0);P=Array.from({length:90},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.18,vy:(Math.random()-.5)*.18,r:Math.random()*2+1,p:Math.random()*6.28}))}function loop(){x.clearRect(0,0,W,H);for(const a of P){a.x+=a.vx;a.y+=a.vy;a.p+=.01;if(a.x<0)a.x=W;if(a.x>W)a.x=0;if(a.y<0)a.y=H;if(a.y>H)a.y=0;const al=.05+.09*(.5+.5*Math.sin(a.p));x.fillStyle=`rgba(45,226,230,${al})`;x.beginPath();x.arc(a.x,a.y,a.r,0,7);x.fill()}requestAnimationFrame(loop)}addEventListener('resize',size);size();loop()})();
+(()=>{const s=document.createElement('style');s.textContent='#cursorGlow{position:fixed;width:300px;height:300px;border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);background:radial-gradient(circle,#2de2e611,transparent 65%);opacity:0;transition:opacity .3s}#scrollProgress{position:fixed;top:0;left:0;height:3px;width:0;z-index:10001;background:linear-gradient(90deg,#2de2e6,#ff4ecd,#8d6bff);box-shadow:0 0 16px #2de2e6}';document.head.appendChild(s);const g=document.createElement('div');g.id='cursorGlow';const p=document.createElement('div');p.id='scrollProgress';document.body.append(g,p);let tx=innerWidth/2,ty=innerHeight/2,x=tx,y=ty;addEventListener('pointermove',e=>{tx=e.clientX;ty=e.clientY;g.style.opacity=1});function f(){x+=(tx-x)*.12;y+=(ty-y)*.12;g.style.left=x+'px';g.style.top=y+'px';const h=document.documentElement,max=h.scrollHeight-innerHeight;p.style.width=(max?scrollY/max*100:0)+'%';requestAnimationFrame(f)}f();document.querySelectorAll('.project,.card').forEach(el=>{el.addEventListener('pointermove',e=>{const r=el.getBoundingClientRect(),rx=(e.clientY-r.top)/r.height-.5,ry=(e.clientX-r.left)/r.width-.5;el.style.transform=`perspective(900px) rotateX(${-rx*3}deg) rotateY(${ry*3}deg) translateY(-7px)`});el.addEventListener('pointerleave',()=>el.style.transform='')})})();
+</script>
+<script id="eyasin-motion-engine">
+(function(){
+ document.body.classList.add('eyasin-ready');
+ const c=document.createElement('canvas');c.id='fx-particles';document.body.prepend(c);
+ const ctx=c.getContext('2d');let W,H,dpr,pts=[];
+ function resize(){W=innerWidth;H=innerHeight;dpr=Math.min(devicePixelRatio||1,2);c.width=W*dpr;c.height=H*dpr;ctx.setTransform(dpr,0,0,dpr,0,0);
+   const count=Math.min(95,Math.max(42,Math.floor(W/15)));
+   pts=Array.from({length:count},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.22,vy:(Math.random()-.5)*.22,r:Math.random()*1.7+.5,a:Math.random()*6.28}));
+ }
+ function draw(){ctx.clearRect(0,0,W,H);
+   for(const p of pts){p.x+=p.vx;p.y+=p.vy;p.a+=.006;if(p.x<0)p.x=W;if(p.x>W)p.x=0;if(p.y<0)p.y=H;if(p.y>H)p.y=0;
+     ctx.fillStyle='rgba(255,23,79,'+(.05+.10*(.5+.5*Math.sin(p.a)))+')';ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fill();
+   }
+   for(let i=0;i<pts.length;i++)for(let j=i+1;j<pts.length;j++){let dx=pts[i].x-pts[j].x,dy=pts[i].y-pts[j].y,dist=Math.hypot(dx,dy);
+     if(dist<105){ctx.strokeStyle='rgba(255,23,79,'+(0.035*(1-dist/105))+')';ctx.lineWidth=.6;ctx.beginPath();ctx.moveTo(pts[i].x,pts[i].y);ctx.lineTo(pts[j].x,pts[j].y);ctx.stroke();}
+   }
+   requestAnimationFrame(draw)
+ }
+ addEventListener('resize',resize,{passive:true});resize();draw();
+
+ const cursor=document.createElement('div');cursor.id='fx-cursor';
+ const progress=document.createElement('div');progress.id='fx-progress';document.body.append(cursor,progress);
+ let mx=innerWidth/2,my=innerHeight/2,cx=mx,cy=my;
+ addEventListener('pointermove',e=>{mx=e.clientX;my=e.clientY;cursor.style.opacity='1'},{passive:true});
+ addEventListener('pointerleave',()=>cursor.style.opacity='0',{passive:true});
+ function cursorLoop(){cx+=(mx-cx)*.11;cy+=(my-cy)*.11;cursor.style.left=cx+'px';cursor.style.top=cy+'px';
+   const max=document.documentElement.scrollHeight-innerHeight;progress.style.width=(max>0?scrollY/max*100:0)+'%';requestAnimationFrame(cursorLoop)}
+ cursorLoop();
+
+ const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('ey-visible')}),{threshold:.12});
+ document.querySelectorAll('section,article,.card,.project,.work-card,.demo,.app,.hero-grid,.profile-card').forEach((el,i)=>{
+   el.classList.add('ey-reveal');el.style.transitionDelay=Math.min(i*35,280)+'ms';observer.observe(el);
+ });
+ document.querySelectorAll('a,button,.btn,.nav-btn').forEach(el=>{
+   el.addEventListener('pointermove',e=>{if(innerWidth<800)return;const r=el.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;el.style.transform='translate('+x*4+'px,'+y*3+'px)'});
+   el.addEventListener('pointerleave',()=>el.style.transform='');
+ });
+ document.querySelectorAll('img').forEach(img=>{img.classList.add('ey-float')});
+})();
+</script>
+
+</body></html>
