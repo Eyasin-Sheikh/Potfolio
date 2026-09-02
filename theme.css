@@ -1,0 +1,21 @@
+/* EYASIN GLOBAL THEME */
+.theme-global-toggle{position:fixed;right:22px;bottom:22px;z-index:99999;border:1px solid #d9d9d2;background:#171717;color:#fff;border-radius:999px;padding:11px 15px;font:600 11px/1 system-ui,sans-serif;cursor:pointer;box-shadow:0 12px 30px #0002;transition:transform .35s cubic-bezier(.16,1,.3,1),box-shadow .35s ease,background .35s ease;display:flex;gap:8px;align-items:center}.theme-global-toggle:hover{transform:translateY(-3px)}
+body.theme-dark{background:#0c0d10!important;color:#f4f6f8!important}
+body.theme-dark:before{opacity:.18!important;filter:blur(40px)!important}
+body.theme-dark .panel,body.theme-dark .app,body.theme-dark .demo-card,body.theme-dark .card,body.theme-dark .side,body.theme-dark .hero,body.theme-dark section{background:#15171c!important;color:#f4f6f8!important;border-color:#30333a!important}
+body.theme-dark .nav,body.theme-dark header.top{background:rgba(15,17,21,.9)!important;color:#f4f6f8!important;border-color:#30333a!important}
+body.theme-dark .nav a,body.theme-dark .navlinks,body.theme-dark p,body.theme-dark .copy,body.theme-dark .demo-card p,body.theme-dark .demo-head p,body.theme-dark .eyebrow,body.theme-dark .muted,body.theme-dark .footer,body.theme-dark footer,body.theme-dark .meta,body.theme-dark .stat span{color:#aeb5bf!important}
+body.theme-dark input,body.theme-dark select,body.theme-dark textarea{background:#0f1115!important;color:#f4f6f8!important;border-color:#383c45!important}
+body.theme-dark .filter,body.theme-dark .back,body.theme-dark .available,body.theme-dark .socials a,body.theme-dark .pill{background:#1b1e24!important;color:#e8ebef!important;border-color:#383c45!important}
+body.theme-dark .work-card:hover,body.theme-dark .demo-card:hover{background:#1c2027!important}
+body.theme-dark .work-card,body.theme-dark .service-item,body.theme-dark .row,body.theme-dark .timeline,body.theme-dark .grid{border-color:#30333a!important}
+body.theme-dark .marquee{background:#111318!important}
+body.theme-dark .track{color:#e8ebef!important}
+body.theme-dark .title .ghost{color:#252a31!important}
+body.theme-dark .ghost-name{color:#20242a!important}
+body.theme-dark .outline{color:transparent!important;-webkit-text-stroke-color:#e8ebef!important}
+body.theme-dark .hero-name,body.theme-dark .brand,body.theme-dark h1,body.theme-dark h2,body.theme-dark h3,body.theme-dark strong,body.theme-dark b{color:#f4f6f8!important}
+body.theme-dark .code{background:#090b0f!important;color:#e8ebef!important}
+body.theme-dark .result{background:#20242b!important;color:#f4f6f8!important}
+body.theme-dark .demo-card .open,body.theme-dark button,body.theme-dark .cta,body.theme-dark .talk{background:#f4f6f8!important;color:#101216!important}
+@media(max-width:800px){.theme-global-toggle{right:14px;bottom:14px;padding:10px 12px}}
